@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>WILLIAM</div>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(/Users/william.ijskes/Desktop/Portofolio/images/photo-1485579149621-3123dd979885.jpeg)"></div>
+                                       
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="https://i.pinimg.com/originals/79/93/e4/7993e4581ed58d45d504af78f8538388.png">
+                            </div>
+
+                                <div class="subtitle">
+                                    Sing like no one is in the room
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(/Users/william.ijskes/Desktop/Portofolio/images/photo-1510333337682-fdd0eba357a4.jpeg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="https://image.flaticon.com/icons/png/512/61/61212.png">
+                            </div>
+                            
+                                <div class="subtitle">
+                                Travel keeps you young
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/photo-1536129808005-fae894214c73.jpeg)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="https://i.ya-webdesign.com/images/diamond-logo-png-4.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                                Dance like there is no tomorrow
+                            </div>
+                        </div>
+                    </div>
+                                    
+                    
+                    
+                    
+                    
+
+                    
+
+
+
+                </div>
+
+
+
+            </div>
+        
+        </div>
+
+    </div>          
+
+
+    
+
+    
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem=> {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+     
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
